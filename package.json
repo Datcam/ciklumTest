@@ -1,0 +1,21 @@
+{
+  "name": "ciklum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Plugin.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Datcam/ciklumTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Datcam/ciklumTest/issues"
+  },
+  "homepage": "https://github.com/Datcam/ciklumTest#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  }
+}
