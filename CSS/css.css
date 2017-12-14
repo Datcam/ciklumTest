@@ -1,0 +1,184 @@
+.square {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 30%;
+}
+
+.green {
+    background: lawngreen;
+    width: 200px;
+    height: 200px;
+}
+
+.red {
+    background: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33%;
+    height: 67%;
+    float: right;
+    z-index: 1;
+}
+
+.blue {
+    background: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 67%;
+    height: 33%;
+    float: right;
+    z-index: 0;
+}
+
+.purple {
+    background: purple;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 33%;
+    height: 67%;
+    float: right;
+    z-index: 0;
+}
+
+.lightBlue {
+    background: lightblue;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 67%;
+    height: 33%;
+    float: right;
+    z-index: 1;
+}
+
+/*______________________________________________________________________________________*/
+
+/*Menu navs */
+
+.row {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.row .fontSize {
+    font-size: 40px;
+}
+
+.tab1 {transition-timing-function: linear;}
+.tab2 {transition-timing-function: linear;}
+.tab3 {transition-timing-function: linear;}
+.tab4 {transition-timing-function: linear;}
+.tab5 {transition-timing-function: linear;}
+
+.tab1:hover {
+    width: 200px;
+    text-align: center;
+}
+.tab2:hover {
+    width: 200px;
+    text-align: center;
+}
+.tab3:hover {
+    width: 200px;
+    text-align: center;
+}
+.tab4:hover {
+    width: 200px;
+    text-align: center;
+}
+.tab5:hover {
+    width: 200px;
+    text-align: center;
+}
+
+.row:hover .fontSize {
+    opacity: .10;
+}
+.row .fontSize:hover {
+    opacity: 1;
+}
+
+.tab1 {
+    width: 100px;
+    float: left;
+    background: red;
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
+}
+
+.tab2 {
+    width: 100px;
+    float: left;
+    background: blue;
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
+}
+
+.tab3 {
+    width: 100px;
+    float: left;
+    background: orange;
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
+}
+
+.tab4 {
+    width: 100px;
+    float: left;
+    background: pink;
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
+}
+
+.tab5 {
+    width: 100px;
+    float: left;
+    background: yellow;
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
+}
+
+div.circle {
+    -moz-border-radius: 50px/50px;
+    -webkit-border-radius: 50px 50px;
+    margin-top: 200px;
+    border-radius: 60px/60px;
+    border: solid 11px #f00;
+    width: 100px;
+    height: 100px;
+}
+
+#watch { font-size:1em; position:relative; margin-top: 180px }
+#watch .frame-face {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 17em/17em;
+    border: 5px solid black;
+}
+
+
+@keyframes seconds { to {transform:rotate(480deg)} }
+#watch .seconds-hand {
+    width:1em;
+    height:14em;
+    border-radius:.1em .1em 0 0/10em 10em 0 0;
+    background: blue;
+    position:absolute;
+    bottom:50%;
+    left:16%;
+    margin:0 0 -2em -.1em;
+    box-shadow:rgba(0,0,0,.8) 0 0 .2em;
+    transform-origin:0.1em 12em;
+    transform:rotate(120deg);
+    animation:seconds 60s steps(60, end) 0s infinite;
+}
