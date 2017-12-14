@@ -14,8 +14,8 @@
     "url": "https://github.com/Datcam/ciklumTest/issues"
   },
   "homepage": "https://github.com/Datcam/ciklumTest#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "webpack": "^3.10.0"
-  }
+  "dependencies": {
+    "moment": "^2.19.4"
+  },
+  "devDependencies": {}
 }

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Test</title>
-
     <script
             src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-<div id="main"></div>
 
-<button id="sayHi">Click</button>
+<div id="clock"></div>
 
-<script src="./dist/bundle.js" async></script>
+<button type="button" class="btn btn-success" onclick="window.location.href='platform.html'">Platform</button>
+<button type="button" class="btn btn-success" onclick="window.location.href='openAccount.html'">Open account</button>
+
+<script src="./src/Plugin.js" async></script>
 </body>
 </html>

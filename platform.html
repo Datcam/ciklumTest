@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Platform Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"
+></script>
+<script src="node_modules/moment/moment.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function (){
+            var pluginScript = document.createElement("script");
+
+
+            pluginScript.setAttribute('src', './src/Plugin.js');
+            document.head.appendChild(pluginScript);
+        });
+    </script>
+
+<div id="clock"></div>
+<div id="platform"></div>
+
+<button type="button" class="btn btn-success" onclick="window.location.href='index.html'">Back</button>
+</body>
+</html>
